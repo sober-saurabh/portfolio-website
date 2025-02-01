@@ -44,15 +44,15 @@ body{
 }
 
 .nav-menu li a:hover {
-  color: lightgrey;
-  border-bottom: 1px solid black;
+  	color: lightgrey;
+  	border-bottom: 1px solid black;
 }
 
 .nav-menu-icon{
 	color: white;
-  margin: 0;
-  margin-right: 5%;
-  display: none;
+  	margin: 0;
+  	margin-right: 5%;
+  	display: none;
 }
 
 .text-centre{
@@ -80,6 +80,7 @@ body{
 	width: 1rem;
 	padding: 0.5rem;
 	border-radius: 50%;
+	margin-top: 10px;
 }
 
 .social-icons li a i:hover{
@@ -191,8 +192,6 @@ section{
 
 section:nth-child(2n){
 	background-color: #0c0c0c0f;
-	
-
 }
 
 section:nth-child(2n+1){
@@ -211,7 +210,7 @@ section:nth-child(2n+1){
 	font-size: 40px;
 	display: inline-block;
 	color: #2857a4;
-/*	color: var(--section-color-blue);*/
+	/* color: var(--section-color-blue); */
 	margin-right: 0.5rem;
 	padding-top: 10px;
 	margin-bottom: 10px;
@@ -899,29 +898,25 @@ button:focus{
 @media screen and (max-width: 768px){
 
 	#contact-form {
-  margin-left: 11%;
-  margin-top: 10%;
-}
+  	margin-left: 11%;
+  	margin-top: 10%;
+	}
 
 	#contact-container{
 		display: block;
 	}
 
 	#contact-form-container {
-  width: 90%;
-}
+  	width: 90%;
+	}
 
 	#my-details-container {
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 22%;
-  margin-bottom: 10%;
+  	width: 80%;
+  	margin-left: 10%;
+  	margin-top: 22%;
+  	margin-bottom: 10%;
+	}
 }
-
-}
-
-
-
 
 
 /* Common margin classes */

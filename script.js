@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     menuIcon.addEventListener("click", function () {
         navMenu.classList.toggle("active");
-        // overlay.classList.toggle("active");
+        overlay.classList.toggle("active");
         menuIcon.classList.toggle("active");
     });
 
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-  
+
 
 // Smooth Scrolling to Sections
 document.querySelector(".nav-menu").addEventListener("click", function (event) {
@@ -35,6 +35,8 @@ document.querySelector(".nav-menu").addEventListener("click", function (event) {
     }
 });
 
+
+
 // Skill Progress Animation
 var progressBars = document.querySelectorAll(".skill-progress > div");
 var barContainer = document.getElementById("bar-container");
@@ -46,6 +48,8 @@ function initializeBars() {
 }
 
 initializeBars();
+
+
 
 // Function to animate the bars smoothly
 function fillBars() {
@@ -63,6 +67,33 @@ function fillBars() {
         animateBar();
     });
 }
+
+  
+
+
+// JavaScript for mailto: email forwarding
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault(); // Prevent the default form submission
+  
+    // Get form field values
+    var name = document.getElementById("input-name").value;
+    var email = document.getElementById("input-email").value;
+    var message = document.getElementById("input-message").value;
+  
+    // Construct the email subject and body
+    var subject = "Contact Message from Portfolio";
+    var body = "Name: " + name + "\nEmail: " + email + "\nMessage: " + message;
+  
+    // Create the mailto link
+    var mailtoLink = "mailto:csaurabh14@yahoo.co.uk?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  
+    // Redirect to the mailto link
+    window.location.href = mailtoLink;
+  });
+  
+
+
+
 
 // Scroll event to trigger animation
 function checkScroll() {
